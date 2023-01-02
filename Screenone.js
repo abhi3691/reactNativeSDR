@@ -19,15 +19,15 @@ const Screenone = () => {
                 userName: "John Doe",
                 icon: "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350",
                 onPress: (name) => this.handleNotificationPress(name),
-                buttonStyle: { backgroundColor: "green", borderRadius: 20, height: 30, justifyContent: "center", alignItems: "center" },
+                buttonStyle: { backgroundColor: "red", borderRadius: 20, height: 30, justifyContent: "center", alignItems: "center" },
             },
         }
     }
 
     return (
-        <View style={{ flex: 1, alignItems: 'center' }}>
+        <View style={{ flex: 1 }}>
             <SDRClient
-                url="/sdr/notifications/preview/"
+                url="/sdr/notifications/preview"
                 renderLoading={renderLoading}
                 {...getNotification()}
             />
